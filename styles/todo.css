@@ -1,0 +1,161 @@
+.logo {
+    width: 100px;
+    height: 50px;
+}
+header{
+    background-color:#FFD9EA;  
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+}
+
+#search-form {
+    display: flex;
+    align-items: center;
+}
+
+#search-input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 400px;
+}
+
+#search-form button {
+    padding: 5px 10px;
+    margin-left: 5px;
+    border: none;
+    background-color: #f33af3;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search-form button:hover {
+    background-color: #e055e1;
+}
+
+.search-results {
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    max-width: 700px;
+}
+
+.tiposTrabajos {
+    display: flex;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+
+.tiposTrabajos2 {
+    display: flex;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+.result-item {
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.result-item a {
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.result-item p {
+    margin: 5px 0 0;
+    color: #666;
+}
+
+.result-item a:hover {
+    text-decoration: underline;
+}
+
+.imagen {
+    padding: 1%;
+    display: flex;
+    margin-left: 20px;
+}
+
+.cajas {
+    margin-top: 15px;
+    margin-left: 50px;
+}
+
+.cajas2 {
+
+    margin-top: 15px;
+    margin-left: 50px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000;
+}
+
+.tiposTrabajos a:hover {
+    color: #af3b71;
+    transition: 0.2s;
+}
+
+.tiposTrabajos2 a:hover {
+    color: #af3b71;
+    transition: 0.2s;
+
+}
+
+.cajas a:hover {
+    color: #af3b71;
+    transition: 0.2s;
+}
+
+.cajas2 a:hover {
+    color: #af3b71;
+    transition: 0.2s;
+
+}
+body {
+    font-family: "Candara";
+    margin: 0;
+    padding: 0;
+    background-color: #FFBFDC; 
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 80px;
+}
+
+.redes-sociales {
+    padding-top: 25px;
+}
+
+.redes-sociales img {
+    width: 20px;
+}

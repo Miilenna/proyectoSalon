@@ -1,0 +1,68 @@
+
+/*************************************SOLO DEL HTML ESPECIFICO****************************************/
+.slideshow-container {
+    position: relative;
+    max-width: 900px;
+    height: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.uñas1,
+.labios,
+.uñas,
+.pestañas {
+    width: 20%;
+    height: 200px;
+}
+
+.todo {
+    padding-top: 2%;
+    justify-content: center;
+    display: flex;
+    gap: 15px;
+}
+
+.imgFondo {
+    padding-left: -1.1%;
+}
