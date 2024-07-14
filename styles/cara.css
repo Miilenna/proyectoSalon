@@ -62,7 +62,12 @@
     height: 150px;
     padding: 10px;
 }
-
+.cejas4 img{
+    width: 15%;
+    height: 200px;
+    padding-left: 10px;
+    padding-top: 15px;
+}
 .cejasAbajo img{
     width: 50%;
     height: 150px;
@@ -73,6 +78,20 @@
     height: 350px;  
     margin-top: 10px;
 }
+.video2 video{
+    width: 250px;
+    height: 250px; 
+    margin-top: 10px; 
+}
+.cejas6 {
+    justify-content: center;
+    display: flex;
+}
+.cejas6 img {
+    width: 20%;
+    height: 250px;
+    padding: 10px;
+}
 .tipo-cejas .contenido-oculto {
     display: none;
     padding: 10px;
@@ -81,7 +100,11 @@
     margin-top: 5px;
 
 }
-
+.cejas5 img{
+    width:17%;
+    height: 230px;
+    padding: 10px;
+}
 .tipo-cejas .contenido-oculto p {
     margin: 5px 0;
 }
