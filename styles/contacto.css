@@ -2,7 +2,10 @@
     width: 50%;
     height: 150%;
 }
-
+.mapa {
+    display: flex;
+    justify-content: center;
+}
 .container {
     max-width: 600px;
     margin: 50px auto;
@@ -17,7 +20,7 @@ h2 {
 .formulario {
     padding: 15px;
 }
-input[type="text"],
+.formulario input[type="text"],
 input[type="tel"],
 input[type="email"],
 textarea {
@@ -36,7 +39,7 @@ label[for="mensaje"] {
     margin-top: 10px;
 }
 textarea {
-    height: 150px;
+    height: 100px;
     margin-top: 5px;
 }
 
