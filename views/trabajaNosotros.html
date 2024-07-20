@@ -36,7 +36,7 @@
 <body>
     <div class="search-results" id="search-results"></div>
     <h2>Formulario de Envío de Curriculum</h2>
-    <form action="../formulario.php" method="post" enctype="multipart/form-data">
+    <form method="POST" action="https://formsubmit.co/milena200.fv@gmail.com" enctype="multipart/form-data">
         <label for="asunto">Asunto:</label>
         <input type="text" name="asunto" id="asunto" required><br><br>
 
@@ -44,7 +44,9 @@
         <textarea name="mensaje" id="mensaje" required></textarea><br><br>
 
         <label for="archivo">Selecciona el PDF:</label>
-        <input type="file" name="archivo" id="archivo" accept="application/pdf" required><br><br>
+        <input type="file" name="attachment" id="archivo" accept="application/pdf" required><br><br>
+
+        <input type="hidden" name="_captcha" value="false">
 
         <button type="submit">Enviar</button>
     </form>
