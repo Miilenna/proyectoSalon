@@ -1,0 +1,18 @@
+body {
+    background-color: #FFBFDC;
+}
+img {
+    width: 200px;
+    height: 200px;
+}
+.imagen {
+    justify-content: center;
+    display: flex;
+    margin-top: 150px;
+}
+p {
+    justify-content: center;
+    display: flex;
+    margin-top: 50px;
+    font-size: 20px;
+}

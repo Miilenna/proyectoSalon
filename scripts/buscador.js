@@ -5,7 +5,7 @@ document.getElementById('search-form').addEventListener('submit', function (even
     resultsContainer.innerHTML = '';
 
     if (query.trim() === '') {
-        resultsContainer.innerHTML = '<p>Por favor, ingrese un término de búsqueda.</p>';
+        resultsContainer.innerHTML = '<p>Пожалуйста введите критерий поиска.</p>';
         return;
     }
 
@@ -24,11 +24,11 @@ document.getElementById('search-form').addEventListener('submit', function (even
             });
 
             if (!found) {
-                resultsContainer.innerHTML = '<p>No se encontraron coincidencias.</p>';
+                resultsContainer.innerHTML = '<p>Ничего не найдено.</p>';
             }
         })
         .catch(error => {
             console.error('Error al cargar el índice de búsqueda:', error);
-            resultsContainer.innerHTML = '<p>Error al realizar la búsqueda. Por favor, inténtelo de nuevo más tarde.</p>';
+            resultsContainer.innerHTML = '<p>Ошибка при поиске. Пожалуйста, повторите попытку позже.</p>';
         });
 });

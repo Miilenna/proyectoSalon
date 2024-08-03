@@ -1,11 +1,13 @@
-.mapa img{
+.mapa img {
     width: 50%;
     height: 150%;
 }
+
 .mapa {
     display: flex;
     justify-content: center;
 }
+
 .container {
     max-width: 600px;
     margin: 50px auto;
@@ -14,15 +16,19 @@
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 h2 {
     text-align: left;
 }
+
 .formulario {
     padding: 15px;
 }
+
 .formulario input[type="text"],
 input[type="tel"],
 input[type="email"],
+input[name="asunto"],
 textarea {
     width: 20%;
     padding: 10px;
@@ -38,6 +44,7 @@ label[for="mensaje"] {
     display: flex;
     margin-top: 10px;
 }
+
 textarea {
     height: 100px;
     margin-top: 5px;

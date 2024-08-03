@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <title>STUDIO SHARM PERM</title>
+    <title>Работать с нами</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/contacto.css">
@@ -35,20 +35,21 @@
 
 <body>
     <div class="search-results" id="search-results"></div>
-    <h2>Formulario de Envío de Curriculum</h2>
+    <h2>Форма подачи резюме</h2>
     <form method="POST" action="https://formsubmit.co/milena200.fv@gmail.com" enctype="multipart/form-data">
-        <label for="asunto">Asunto:</label>
+        <label for="asunto">Роман:</label>
         <input type="text" name="asunto" id="asunto" required><br><br>
 
-        <label for="mensaje">Mensaje:</label>
+        <label for="mensaje">Сообщение:</label>
         <textarea name="mensaje" id="mensaje" required></textarea><br><br>
 
-        <label for="archivo">Selecciona el PDF:</label>
+        <label for="archivo">Выберите PDF-файл:</label>
         <input type="file" name="attachment" id="archivo" accept="application/pdf" required><br><br>
 
         <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/views/cargaDePg.html">
 
-        <button type="submit">Enviar</button>
+        <button type="submit">Отправлять</button>
     </form>
     <footer>
         <div class="redes-sociales">

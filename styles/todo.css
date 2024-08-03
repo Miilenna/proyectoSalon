@@ -2,9 +2,11 @@
     width: 100px;
     height: 50px;
 }
-header{
-    background-color:#FFD9EA;  
+
+header {
+    background-color: #FFD9EA;
 }
+
 .search-container {
     display: flex;
     align-items: center;
@@ -128,11 +130,12 @@ a:visited {
     transition: 0.2s;
 
 }
+
 body {
     font-family: "Candara";
     margin: 0;
     padding: 0;
-    background-color: #FFBFDC; 
+    background-color: #FFBFDC;
 }
 
 a {
