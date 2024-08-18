@@ -3,43 +3,6 @@
     height: 50px;
 }
 
-header {
-    background-color: #FFD9EA;
-}
-
-.search-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 50px;
-}
-
-#search-form {
-    display: flex;
-    align-items: center;
-}
-
-#search-input {
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    width: 400px;
-}
-
-#search-form button {
-    padding: 5px 10px;
-    margin-left: 5px;
-    border: none;
-    background-color: #f33af3;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#search-form button:hover {
-    background-color: #e055e1;
-}
-
 .search-results {
     margin: 20px auto;
     padding: 10px;
@@ -47,18 +10,6 @@ header {
     border: 1px solid #ccc;
     border-radius: 10px;
     max-width: 700px;
-}
-
-.tiposTrabajos {
-    display: flex;
-    margin-left: 40px;
-    margin-top: 15px;
-}
-
-.tiposTrabajos2 {
-    display: flex;
-    margin-left: 50px;
-    margin-top: 15px;
 }
 
 .result-item {
@@ -81,28 +32,6 @@ header {
 
 .result-item a:hover {
     text-decoration: underline;
-}
-
-.imagen {
-    padding: 1%;
-    display: flex;
-    margin-left: 20px;
-}
-
-.cajas {
-    margin-top: 15px;
-    margin-left: 50px;
-}
-
-.cajas2 {
-
-    margin-top: 15px;
-    margin-left: 50px;
-}
-
-a {
-    color: #000;
-    text-decoration: none;
 }
 
 a:visited {
@@ -138,11 +67,6 @@ body {
     background-color: #FFBFDC;
 }
 
-a {
-    color: #000;
-    text-decoration: none;
-}
-
 a:visited {
     color: #000;
 }
@@ -161,4 +85,169 @@ footer {
 
 .redes-sociales img {
     width: 20px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #search-input {
+        width: 80%;
+    }
+
+    .tiposTrabajos,
+    .tiposTrabajos2,
+    .imagen,
+    .cajas,
+    .cajas2 {
+        margin-left: 10px;
+        flex-wrap: wrap;
+    }
+
+    footer {
+        margin-top: 20px;
+    }
+}
+
+/* General Header Styles */
+header {
+    background-color: #FFD9EA;
+    padding: 10px 20px;
+}
+
+.imagen {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* Permite que los elementos se envuelvan en pantallas pequeñas */
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+
+#search-form {
+    display: flex;
+    width: 100%;
+}
+
+#search-input {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    flex: 1;
+    margin-right: 5px;
+}
+
+#search-form button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #f33af3;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#search-form button:hover {
+    background-color: #e055e1;
+}
+
+.tiposTrabajos,
+.tiposTrabajos2,
+.cajas,
+.cajas2 {
+    margin: 10px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    padding: 5px;
+    font-size: 14px;
+}
+
+a:hover {
+    color: #af3b71;
+    transition: 0.2s;
+}
+
+/* Media Queries */
+
+/* Pantallas grandes */
+@media (min-width: 992px) {
+    .imagen {
+        justify-content: space-between;
+    }
+
+    .search-container {
+        flex: 0 1 50%;
+    }
+
+    #search-input {
+        width: 80%;
+    }
+}
+
+/* Pantallas medianas */
+@media (max-width: 991px) and (min-width: 768px) {
+    .imagen {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .search-container {
+        margin-top: 10px;
+        flex: 0 1 100%;
+    }
+
+    #search-input {
+        width: 70%;
+    }
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 767px) {
+    header {
+        padding: 10px;
+    }
+
+    .imagen {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        width: 80px;
+    }
+
+    #search-input {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    #search-form button {
+        width: 30%;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    .tiposTrabajos,
+    .tiposTrabajos2,
+    .cajas,
+    .cajas2 {
+        margin: 5px 0;
+    }
+
+    a {
+        font-size: 12px;
+    }
 }

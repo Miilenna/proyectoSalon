@@ -1,7 +1,7 @@
 /* Estilos generales */
-.video video{
+.video video {
     width: 250px;
-    height: 350px;  
+    height: 350px;
     margin-top: 10px;
 }
 
@@ -57,13 +57,16 @@
 .uñas {
     justify-content: center;
     display: flex;
+    flex-wrap: wrap;
 }
+
 .uñas1 {
     width: 200px;
     height: 200px;
     margin-top: 15px;
 }
-.diseño{
+
+.diseño {
     justify-content: left;
     display: flex;
     width: 200px;
@@ -73,7 +76,7 @@
 }
 
 .uñas img {
-    width: 18%;
+    width: 13%;
     height: 200px;
     padding: 10px;
 }
@@ -99,4 +102,24 @@
 /* Mostrar el contenido oculto al hacer click */
 .tipo-uñas.active .contenido-oculto {
     display: block;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .slideshow-container {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .uñas img,
+    .uñas1,
+    .diseño {
+        width: 45%;
+        height: auto;
+    }
+
+    .video video {
+        width: 100%;
+        height: auto;
+    }
 }

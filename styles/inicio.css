@@ -1,4 +1,3 @@
-
 /*************************************SOLO DEL HTML ESPECIFICO****************************************/
 .slideshow-container {
     position: relative;
@@ -52,7 +51,7 @@
 .labios,
 .uñas,
 .pestañas {
-    width: 20%;
+    width: 12%;
     height: 200px;
 }
 
@@ -61,8 +60,29 @@
     justify-content: center;
     display: flex;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .imgFondo {
     padding-left: -1.1%;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .slideshow-container {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .uñas1,
+    .labios,
+    .uñas,
+    .pestañas {
+        width: 45%;
+        height: auto;
+    }
+
+    .todo {
+        gap: 10px;
+    }
 }

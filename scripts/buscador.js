@@ -14,7 +14,10 @@ document.getElementById('search-form').addEventListener('submit', function (even
         .then(data => {
             let found = false;
             data.forEach(page => {
-                if (page.content.toLowerCase().includes(query) || page.title.toLowerCase().includes(query)) {
+                const contentToSearch = page.content.toLowerCase() + ' ' + (page.hiddenContent ? page.hiddenContent.toLowerCase() : '');
+                const titleToSearch = page.title.toLowerCase();
+
+                if (contentToSearch.includes(query) || titleToSearch.includes(query)) {
                     const resultItem = document.createElement('div');
                     resultItem.classList.add('result-item');
                     resultItem.innerHTML = `<a href="${page.url}">${page.title}</a><p>${page.content.substring(0, 100)}...</p>`;

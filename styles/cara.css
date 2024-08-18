@@ -51,60 +51,71 @@
 .cejas {
     justify-content: center;
     display: flex;
+    flex-wrap: wrap;
 }
+
 .cejas1 img {
     padding-top: 15px;
-    width: 200px;
+    width: 250px;
     height: 150px;
 }
+
 .cejas img {
-    width: 18%;
+    width: 13%;
     height: 150px;
     padding: 10px;
 }
-.cejas4 img{
-    width: 15%;
+
+.cejas4 img {
+    width: 12%;
     height: 200px;
     padding-left: 10px;
     padding-top: 15px;
 }
-.cejasAbajo img{
+
+.cejasAbajo img {
     width: 50%;
     height: 150px;
 }
 
-.video video{
+.video video {
     width: 250px;
-    height: 350px;  
+    height: 350px;
     margin-top: 10px;
 }
-.video2 video{
+
+.video2 video {
     width: 250px;
-    height: 250px; 
-    margin-top: 10px; 
+    height: 250px;
+    margin-top: 10px;
 }
+
 .cejas6 {
     justify-content: center;
     display: flex;
+    flex-wrap: wrap;
 }
+
 .cejas6 img {
-    width: 20%;
+    width: 10%;
     height: 250px;
     padding: 10px;
 }
+
 .tipo-cejas .contenido-oculto {
     display: none;
     padding: 10px;
     background-color: #ffffff;
     border-left: 5px solid #ff69b4;
     margin-top: 5px;
-
 }
-.cejas5 img{
-    width:17%;
+
+.cejas5 img {
+    width: 12%;
     height: 230px;
     padding: 10px;
 }
+
 .tipo-cejas .contenido-oculto p {
     margin: 5px 0;
 }
@@ -117,4 +128,28 @@
 /* Mostrar el contenido oculto al hacer click */
 .tipo-cejas.active .contenido-oculto {
     display: block;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .slideshow-container {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .cejas img,
+    .cejas1 img,
+    .cejas4 img,
+    .cejasAbajo img,
+    .cejas6 img,
+    .cejas5 img {
+        width: 45%;
+        height: auto;
+    }
+
+    .video video,
+    .video2 video {
+        width: 100%;
+        height: auto;
+    }
 }

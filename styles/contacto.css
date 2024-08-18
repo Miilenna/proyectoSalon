@@ -30,13 +30,12 @@ input[type="tel"],
 input[type="email"],
 input[name="asunto"],
 textarea {
-    width: 20%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
-    margin-left: 5px;
+    margin-left: 0;
 }
 
 label[for="mensaje"] {
@@ -57,10 +56,23 @@ input[type="submit"] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-left: 5px;
+    margin-left: 0;
 }
 
 input[type="submit"]:hover {
     background-color: #ab177c;
     color: #fff;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .mapa img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container {
+        max-width: 90%;
+        margin: 20px auto;
+    }
 }
