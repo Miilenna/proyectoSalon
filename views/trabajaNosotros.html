@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="RU">
 
 <head>
     <title>Работать с нами</title>
@@ -14,9 +14,11 @@
         <a href="../studioSharmPerm.html"><img class="logo" src="../assets/img/sharm.png" alt="sharm"></a>
         <div class="search-container">
             <form id="search-form">
-                <label for="search-input" style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;">Искать:</label>
+                <label for="search-input"
+                    style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;">Искать:</label>
                 <input type="text" id="search-input" placeholder="Искать...">
-                <button type="submit" style="opacity: 1; color: rgb(255, 255, 255); background-color: rgb(153, 0, 153);">Искать</button>
+                <button type="submit"
+                    style="opacity: 1; color: rgb(255, 255, 255); background-color: rgb(153, 0, 153);">Искать</button>
             </form>
         </div>
         <div class="tiposTrabajos">
@@ -36,22 +38,22 @@
 
 <body>
     <div class="search-results" id="search-results"></div>
-    <h2>Форма подачи резюме</h2>
-    <form method="POST" action="https://formsubmit.co/milena200.fv@gmail.com" enctype="multipart/form-data">
-        <label for="asunto">Роман:</label>
-        <input type="text" name="asunto" id="asunto" required><br><br>
+    <div class="formulario">
+        <h2>Форма подачи резюме</h2>
+        <form id="contenido" method="POST" action="https://formsubmit.co/milena200.fv@gmail.com"
+            enctype="multipart/form-data">
+            <input type="text" name="asunto" id="asunto" placeholder="Роман" required><br><br>
+            <textarea name="mensaje" id="mensaje" placeholder="Сообщение..." required></textarea><br><br>
 
-        <label for="mensaje">Сообщение:</label>
-        <textarea name="mensaje" id="mensaje" required></textarea><br><br>
+            <label for="archivo">Выберите PDF-файл:</label>
+            <input type="file" name="attachment" id="archivo" accept="application/pdf" required><br><br>
 
-        <label for="archivo">Выберите PDF-файл:</label>
-        <input type="file" name="attachment" id="archivo" accept="application/pdf" required><br><br>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/views/cargaDePg.html">
 
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="http://127.0.0.1:5500/views/cargaDePg.html">
-
-        <button type="submit">Отправлять</button>
-    </form>
+            <button type="submit">Отправлять</button>
+        </form>
+    </div>
     <footer>
         <div class="redes-sociales">
             <a href="https://www.instagram.com/studio_sharm_perm/"><img src="../assets/img/ig-logo.png"

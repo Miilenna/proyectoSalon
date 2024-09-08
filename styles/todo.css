@@ -75,8 +75,9 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding-bottom: 24px;
     margin-top: 80px;
+    padding-top: 20px;
 }
 
 .redes-sociales {
