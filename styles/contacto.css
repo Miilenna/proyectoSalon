@@ -1,11 +1,13 @@
 .mapa img {
-    width: 50%;
-    height: 150%;
+    width: 40%;
+    height: 155%;
+    margin-left: 900px;
+    margin-top: 200px;
 }
 
 .mapa {
     display: flex;
-    justify-content: right;
+    justify-content: center;
 }
 
 .container {
@@ -19,14 +21,13 @@
 
 h2 {
     text-align: left;
-    width: fit-content;
-}
-.texto p {
-    width: fit-content;
 }
 
-.formulario {
-    padding: 15px;
+.texto {
+    width: fit-content;
+    margin-top: -560px;
+    margin-left: 300px;
+    margin-bottom: 205px;
 }
 
 .formulario input[type="text"],
@@ -34,8 +35,8 @@ input[type="tel"],
 input[type="email"],
 input[name="asunto"],
 textarea {
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
@@ -51,6 +52,7 @@ label[for="mensaje"] {
 textarea {
     height: 100px;
     margin-top: 5px;
+    width: 250px;
 }
 
 input[type="submit"] {
@@ -73,10 +75,51 @@ input[type="submit"]:hover {
     .mapa img {
         width: 100%;
         height: auto;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .texto {
+        margin-top: 20px;
+        margin-left: 0;
+        margin-bottom: 20px;
     }
 
     .container {
         max-width: 90%;
         margin: 20px auto;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .mapa img {
+        width: 100%;
+        height: auto;
+    }
+
+    .texto {
+        margin-top: 15px;
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    textarea {
+        width: 100%;
+    }
+
+    input[type="submit"] {
+        width: 100%;
     }
 }
